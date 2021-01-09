@@ -14,7 +14,7 @@ app.get("/", function(req, res){
 });
 
 app.post("/sendData", function(req, res){
-    axios.post('http://localhost:5000/sendData', req.body)
+    axios.post('https://anzh-num-pred-api.herokuapp.com/sendData', req.body)
     .then((response) => {
         console.log(`Status: ${response.status}`);
         console.log('Body: ', response.data);
